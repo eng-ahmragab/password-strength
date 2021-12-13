@@ -9,10 +9,8 @@ const strengthBar = document.getElementById("strengthBar");
 
 
 function checkPassword(password) {
-    console.log(password);
-
+    //console.log(password);
     let strength = 0;
-
     if (password.length >= 6) { //length
         strength += 1;
     }
@@ -28,8 +26,6 @@ function checkPassword(password) {
     if (password.match(/[-+*\/=!$%^&@#_|~`(){}\[\]<>:";'?,.]/)) { //special characters
         strength += 1;
     }
-
-
 
     switch (strength) {
         case 0:
